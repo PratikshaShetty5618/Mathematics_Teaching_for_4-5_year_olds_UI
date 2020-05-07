@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Test your knowledge </title>
+	<link rel="stylesheet" type="text/css" href="animate.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  	<style type="text/css">
+  		.bg{
+			background-image: linear-gradient(rgba(255,255,0,0.2),rgba(255,0,255,0.5),rgba(0,0,255,0.5),rgba(0,255,128,0.5));
+		}
+		.fa {
+		  font-size: 25px;
+		  cursor: pointer;
+		  user-select: none;
+		  color: red;
+		}
+		
+		.card{
+			transition: all 1.5s ease;
+		}
+		.card:hover {
+			transform: scale(1.05);
+		}
+  	</style>
+</head>
+<body class="bg">
+<!-- Navbar -->
+    <nav class="navbar">
+      <!-- Brand/logo -->
+      <a class="navbar-brand" href="#">
+        <h3 style="color: purple">Counting Assessment</h3>
+      </a>
+    <!-- Nav buttons -->
+      <div class="justify-content-end">
+          <div class="btn-group">
+            <a href="counting.html"><button type="button" class="btn btn-warning" >Go Back to Learning</button></a>
+          </div>
+          <div class="btn-group">
+            <a href="index.html"><button type="button" class="btn btn-primary" >Go Back to Home Page</button></a>
+          </div>
+
+      </div>
+    <!--//Nav buttons -->
+    </nav>
+<!-- //Navbar -->
+	<!-- Numbers -->
+    <!-- ROW1 -->
+    <div class="card-deck" style="margin: 25px;">
+		<div class="card shadow">
+		    <img src="images/test_count_2.jpg" class="card-img-top" alt="..." height="255px">
+		    <div class="card-body">
+		      	<label for="n1"><h5>Count the objects:</h5></label>
+				<select id="n1" onchange="getval1(this);">
+				  <option selected="true" disabled="true">-----</option>
+				  <option value="1">ONE</option>
+				  <option value="2">TWO</option>
+				  <option value="3">THREE</option>
+				  <option value="4">FOUR</option>
+				  <option value="5">FIVE</option>
+				  <option value="6">SIX</option>
+				  <option value="7">SEVEN</option>
+				  <option value="8">EIGHT</option>
+				  <option value="9">NINE</option>
+				  <option value="10">TEN</option>
+				</select>
+				<i class='fa fa-question-circle' style='color: blue; font-size: 25px;' id='n1_check'></i>
+				<script type="text/javascript">
+			    	function getval1(sel)
+			    	{
+			    		console.log(sel.value);
+			    		if(sel.value == "2")
+			    		{
+			    			$("#n1_check").removeClass('fa fa-question-circle fa-times-circle').addClass('fa fa-check-circle').css("color","green");
+			    		}
+			    		else
+			    		{
+			    			$("#n1_check").removeClass('fa fa-question-circle fa-check-circle').addClass('fa fa-times-circle').css("color","red");
+			    		}
+			    		
+			    	}
+		    	</script>
+		    </div>
+
+		    
+		</div>
+  		<div class="card shadow">
+		    <img src="images/finger_7.png" class="card-img-top" alt="..." height="255px">
+		    <div class="card-body">
+		      	<label for="n2"><h5>Tell the finger count:</h5></label>
+				<select id="n2" onchange="getval2(this);">
+				  <option selected="true" disabled="true">-----</option>
+				  <option value="1">ONE</option>
+				  <option value="2">TWO</option>
+				  <option value="3">THREE</option>
+				  <option value="4">FOUR</option>
+				  <option value="5">FIVE</option>
+				  <option value="6">SIX</option>
+				  <option value="7">SEVEN</option>
+				  <option value="8">EIGHT</option>
+				  <option value="9">NINE</option>
+				  <option value="10">TEN</option>
+				</select>
+				<i class='fa fa-question-circle' style='color: blue; font-size: 25px;' id='n2_check'></i>
+				<script type="text/javascript">
+		    	function getval2(sel)
+		    	{
+		    		console.log(sel.value);
+		    		if(sel.value == "7")
+		    		{
+		    			$("#n2_check").removeClass('fa fa-question-circle fa-times-circle').addClass('fa fa-check-circle').css("color","green");
+		    		}
+		    		else
+		    		{
+		    			$("#n2_check").removeClass('fa fa-question-circle fa-check-circle').addClass('fa fa-times-circle').css("color","red");
+		    		}
+		    		
+		    	}
+		    	
+		    </script>
+		    </div>
+		    </div>
+		
+	</div>
+	<!-- //ROW! -->
+	<script type="text/javascript">
+		
+	</script>
+</body>

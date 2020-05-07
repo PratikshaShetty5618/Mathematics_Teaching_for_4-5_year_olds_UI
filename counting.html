@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Numbers learning is Fun </title>
+	<link rel="stylesheet" type="text/css" href="animate.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  	<style type="text/css">
+  		.bg{
+			background-image: linear-gradient(rgba(255,255,0,0.2),rgba(255,0,255,0.5),rgba(0,0,255,0.5),rgba(0,255,128,0.5));
+		}
+		.fa {
+		  font-size: 25px;
+		  cursor: pointer;
+		  user-select: none;
+		  color: red;
+		}
+		
+		.card{
+			transition: all 1.5s ease;
+		}
+		.card:hover {
+			transform: scale(1.1);
+		}
+  	</style>
+</head>
+<body class="bg">
+<!-- Navbar -->
+    <nav class="navbar">
+      <!-- Brand/logo -->
+      <a class="navbar-brand" href="#">
+      	<h3 style="color: purple">Counting</h3>
+      </a>
+    <!-- Nav buttons -->
+      <div class="justify-content-end">
+          <div class="btn-group">
+            <a href="counting_test.html"><button type="button" class="btn btn-success" >Take Assessment</button></a>
+          </div>
+          <div class="btn-group">
+            <a href="index.html"><button type="button" class="btn btn-primary" >Go Back to Home Page</button></a>
+          </div>
+      </div>
+    <!--//Nav buttons -->
+    </nav>
+<!-- //Navbar -->
+<!-- Numbers -->
+    <!-- ROW1 -->
+    <div class="card-deck" style="margin: 25px;">
+		<div class="card shadow">
+		    <img src="images/counting_1.png" class="card-img-top" alt="..." height="255px">
+		    <div class="card-body">
+		      	<img src="images/finger_1.jpg" class="card-img-top" alt="..." height="155px">
+		    </div>
+		</div>
+  		<div class="card shadow">
+		    <img src="images/counting_2.png" class="card-img-top" alt="..." height="255px">
+		    <div class="card-body">
+		      	<img src="images/finger_2.jpg" class="card-img-top" alt="..." height="155px">
+		    </div>
+		</div>
+		<div class="card shadow">
+		    <img src="images/counting_3.png" class="card-img-top" alt="..." height="255px">
+		    <div class="card-body">
+		      	<img src="images/finger_3.png" class="card-img-top" alt="..." height="155px">
+		    </div>
+		</div>
+	</div>
+	<!-- //ROW! -->
+	<!-- ROW2 -->
+    <div class="card-deck" style="margin: 25px;">
+		<div class="card shadow">
+		    <img src="images/counting_4.jpg" class="card-img-top" alt="..." height="255px">
+		    <div class="card-body">
+		      	<img src="images/finger_4.png" class="card-img-top" alt="..." height="155px">
+		    </div>
+		</div>
+  		<div class="card shadow">
+		    <img src="images/counting_5.jpg" class="card-img-top" alt="..." height="255px">
+		    <div class="card-body">
+		      	<img src="images/finger_5.jpg" class="card-img-top" alt="..." height="155px">
+		    </div>
+		</div>
+		<div class="card shadow">
+		    <img src="images/counting_6.jpg" class="card-img-top" alt="..." height="255px">
+		    <div class="card-body">
+		      	<img src="images/finger_6.png" class="card-img-top" alt="..." height="155px">
+		    </div>
+		</div>
+	</div>
+	<!-- END ROW2 -->
+	<!-- ROW3 -->
+    <div class="card-deck" style="margin: 25px;">
+		<div class="card shadow">
+		    <img src="images/counting_7.jpg" class="card-img-top" alt="..." height="255px">
+		    <div class="card-body">
+		      	<img src="images/finger_7.png" class="card-img-top" alt="..." height="155px">
+		    </div>
+		</div>
+  		<div class="card shadow">
+		    <img src="images/counting_8.jpg" class="card-img-top" alt="..." height="255px">
+		    <div class="card-body">
+		      	<img src="images/finger_8.png" class="card-img-top" alt="..." height="155px">
+		    </div>
+		</div>
+		<div class="card shadow">
+		    <img src="images/counting_9.jpg" class="card-img-top" alt="..." height="255px">
+		    <div class="card-body">
+		      	<img src="images/finger_9.png" class="card-img-top" alt="..." height="155px">
+		    </div>
+		</div>
+	</div>
+	<!-- //ROW3 -->
+	<!-- ROW4 -->
+    <div class="card-deck" style="margin: 25px;">
+		<div class="card shadow">
+		    <img src="images/counting_10.jpg" class="card-img-top" alt="..." height="255px">
+		    <div class="card-body">
+		      	<img src="images/finger_10.jpg" class="card-img-top" alt="..." height="155px">
+		    </div>
+		</div>
+	</div>
+	<!-- //ROW4 -->
+<!-- //ARTWORKS -->
+
+<!-- Like/Favourite Toggle -->
+	<script>
+		function heartToggle(x) {
+  				x.classList.toggle("fa-heartbeat");
+		}
+		function thumbToggle(x){
+			x.classList.toggle("fa-thumbs-up");
+		}
+	</script>
+<!-- //Like/Favourite Toggle -->
+
+</body>
+</html>
